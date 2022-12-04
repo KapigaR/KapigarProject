@@ -18,7 +18,14 @@ public class Example5 {
 
         char[] array;
         array = String.valueOf(num).toCharArray();
-        int arrayNum = array.length-4;
-        System.out.println(array[arrayNum] + " тысяч в этом числе.");
+        if (array.length>3)
+        {
+            int arrayNum = array.length - 4;
+            System.out.println(array[arrayNum] + " тысяч в этом числе.");
+        }
+        else
+        {
+            System.out.println("Число меньше тысячи");
+        }
     }
 }
